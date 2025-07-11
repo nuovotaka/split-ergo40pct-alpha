@@ -28,28 +28,28 @@
 
         layer_0 {
             bindings = <
-&kp ESC           &kp Q         &kp W             &kp E      &kp R  &kp T  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp Y      &kp U  &kp I      &kp O              &kp P          &mt DELETE BACKSPACE
-&kp TAB           &kp A         &kp S             &kp D      &kp F  &kp G  &kp CAPS          &kp BACKSLASH      &kp H      &kp J  &kp K      &kp L              &kp SEMICOLON  &kp SQT
-&kp LEFT_SHIFT    &kp Z         &kp X             &kp C      &kp V  &kp B                                       &kp N      &kp M  &kp COMMA  &kp PERIOD         &kp SLASH      &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE  &to 1  &to 2  &to 3             &to 4              &kp ENTER  &to 0  &tog 5     &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp ESC           &kp Q         &kp W             &kp E              &kp R      &kp T  &kp LEFT_BRACKET  &mkp MB2  &kp Y     &kp U      &kp I           &kp O              &kp P          &mt DELETE BACKSPACE
+&kp TAB           &kp A         &kp S             &kp D              &kp F      &kp G  &kp CAPS          &mkp MB1  &kp H     &kp J      &kp K           &kp L              &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT    &kp Z         &kp X             &kp C              &kp V      &kp B                              &kp N     &kp M      &kp COMMA       &kp PERIOD         &kp SLASH      &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LANG_HIRAGANA  &kp SPACE  &to 1  &to 2             &mkp MB1  &mkp MB2  &kp ENTER  &kp LANGUAGE_1  &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
         layer_1 {
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &kp MINUS  &kp EQUAL  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &kp NUMBER_0  &trans
-&trans  &none         &none         &none         &none         &none   &trans     &kp GRAVE  &none         &none         &none         &none           &none         &none
-&trans  &kp LG(Q)     &kp LG(W)     &none         &none         &none                         &none         &none         &none         &none           &kp UP_ARROW  &trans
+&trans  &none         &none         &none         &none         &none   &trans     &kp GRAVE  &none         &kp NUMBER_4  &kp N5        &kp NUMBER_6    &none         &none
+&trans  &kp LG(Q)     &kp LG(W)     &none         &none         &none                         &none         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp UP_ARROW  &trans
 &trans  &trans        &trans        &trans        &trans        &trans  &trans     &trans     &trans        &trans        &trans        &kp LEFT_ARROW  &kp DOWN      &kp RIGHT
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&trans  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none    &none    &none    &none
-&trans  &none   &none   &none   &none   &none                   &none   &none   &none    &none    &none    &trans
-&none   &none   &none   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &none    &none    &none
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &none   &none   &kp F6  &kp F7  &kp F8  &kp F9  &kp F12  &trans
+&trans  &none   &none   &none   &none   &none   &none   &none   &none   &kp F4  &kp F5  &kp F6  &kp F11  &none
+&trans  &none   &none   &none   &none   &none                   &none   &kp F1  &kp F2  &kp F3  &kp F10  &trans
+&none   &none   &none   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &none    &none
             >;
         };
 
@@ -82,6 +82,42 @@
             sensor-bindings =
                 <&mouse_scrl SCRL_DOWN SCRL_UP>,
                 <&mouse_scrl SCRL_UP SCRL_DOWN>;
+        };
+
+        layer_6 {
+            bindings = <
+&kp ESC    &kp Q     &kp W   &kp E   &kp R              &kp T      &none   &kp Y     &kp U      &kp I      &kp O      &kp P      &kp LBKT   &kp RBKT
+&kp LCTRL  &kp A     &kp S   &kp D   &kp F              &kp G      &none   &kp H     &kp J      &kp K      &kp L      &kp MINUS  &kp EQUAL  &kp SEMI
+&kp LSHFT  &kp Z     &kp X   &kp C   &kp V              &kp B                        &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp BSLH
+&kp LALT   &kp LGUI  &trans  &trans  &kp LANG_HIRAGANA  &kp SPACE  &trans  &kp BSPC  &kp ENTER  &kp LANG1  &kp RGUI   &kp RALT   &kp RCTRL  &kp APOS
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &mkp MCLK       &trans           &trans          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans           &trans          &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &trans  &kp N6    &kp N7     &kp N8  &kp N9  &kp N0     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &trans  &kp N0    &kp N4     &kp N5  &kp N6  &kp COMMA  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &kp N1     &kp N2  &kp N3  &kp DOT    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp SPACE  &trans  &kp BSPC  &kp ENTER  &trans  &trans  &trans     &trans  &trans
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
