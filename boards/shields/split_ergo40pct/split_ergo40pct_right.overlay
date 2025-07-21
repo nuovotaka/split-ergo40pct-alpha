@@ -48,6 +48,8 @@
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        input-processors = <&paw32xx_accel_toggle>;
+
         // 通常カーソル移動
         input-processors =
             <&zip_xy_scaler 1 1>;
@@ -132,13 +134,15 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>;
 
+        label = "trackball1";
+
         rotation = <90>;
         scroll-tick = <10>;
 
         snipe-layers = <5>;
         scroll-layers = <6 7 8 9>;
         scroll-horizontal-layers = <7 9>;
-        
+
         // --- 加速度カーブの設定 ---
         accel-thresholds = <10 30>;
         accel-factors = <15 25>; // 1.5, 2.5 (fixed-point: 1.5→15, 2.5→25)
