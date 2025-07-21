@@ -12,6 +12,6 @@ manifest:
     - name: zmk-driver-paw3222-alpha
       remote: nuovotaka
       revision: develop
-      path: modules/zmk-driver-paw3222-alpha
+      path: zmk-driver-paw3222-alpha
   self:
     path: config
