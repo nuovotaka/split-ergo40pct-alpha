@@ -48,7 +48,6 @@
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&paw32xx_accel_toggle>;
 
         // 通常カーソル移動
         input-processors =
