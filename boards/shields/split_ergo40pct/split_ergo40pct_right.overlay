@@ -138,6 +138,10 @@
         snipe-layers = <5>;
         scroll-layers = <6 7 8 9>;
         scroll-horizontal-layers = <7 9>;
+        
+        // --- 加速度カーブの設定 ---
+        accel-thresholds = <10 30>;
+        accel-factors = <15 25>; // 1.5, 2.5 (fixed-point: 1.5→15, 2.5→25)
     };
 };
 
