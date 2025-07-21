@@ -1,4 +1,4 @@
-# config/dts/bindings/behaviors/zmk,behavior-accel-toggle.yaml
+# config/dts/bindings/behaviors/behavior-accel-toggle.yaml
 
 compatible: "zmk,behavior-accel-toggle"
 
