@@ -16,6 +16,7 @@
 
         accel_toggle: accel_toggle {
             compatible = "zmk,behavior-accel-toggle";
+            #binding-cells = <1>;
         };
     };
 
