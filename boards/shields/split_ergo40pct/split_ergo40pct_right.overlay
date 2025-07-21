@@ -136,9 +136,8 @@
         accel-move-enable;
         // accel-scroll-enable;
 
-        accel-threshold = <2>;
-        accel-scale-low = <1000>;
-        accel-scale-high = <2000>;
+        accel-thresholds = <2 5 10>;
+        accel-factors = <1000 1500 2000 2500>; // 1.0倍, 1.5倍, 2.0倍, 2.5倍
 
         rotation = <90>;
         scroll-tick = <10>;
