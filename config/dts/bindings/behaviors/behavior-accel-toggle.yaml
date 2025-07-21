@@ -1,0 +1,10 @@
+# config/dts/bindings/behaviors/zmk,behavior-accel-toggle.yaml
+
+compatible: "zmk,behavior-accel-toggle"
+
+description: Acceleration toggle behavior for paw32xx
+
+#binding-cells:
+  - dev_idx
+
+properties: {}
