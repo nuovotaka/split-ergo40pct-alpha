@@ -7,7 +7,6 @@
     behaviors {
         ht_boot_reset: ht_boot_reset {
             compatible = "zmk,behavior-hold-tap";
-            label = "HT_BOOT_RESET";
             bindings = <&bootloader>, <&sys_reset>;
 
             #binding-cells = <2>;
