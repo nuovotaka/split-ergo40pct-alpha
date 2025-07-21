@@ -9,10 +9,6 @@ manifest:
       remote: zmkfirmware
       revision: v0.2.1
       import: app/west.yml
-    - name: zmk-config
-      path: config
-      extra-cmake-args:
-        - -DDTC_EXTRA_BINDINGS=${ZEPHYR_BASE}/../config/dts/bindings
     - name: zmk-driver-paw3222-alpha
       remote: nuovotaka
       revision: develop
