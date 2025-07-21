@@ -134,8 +134,8 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>;
 
-        accel-move-enable = <y>;
-        accel-scroll-enable = <n>;
+        accel-move-enable;
+        // accel-scroll-enable;
 
         accel-threshold = <2>;
         accel-scale-low = <1000>;
