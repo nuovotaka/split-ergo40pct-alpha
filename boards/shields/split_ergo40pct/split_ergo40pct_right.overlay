@@ -134,7 +134,7 @@
         irq-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>;
 
         accel-move-enable;
-        accel-scroll-enable;
+        // accel-scroll-enable;
 
         accel-thresholds = <2 5 10>;
         accel-factors = <1000 1500 2000 2500>; // 1.0倍, 1.5倍, 2.0倍, 2.5倍
