@@ -69,8 +69,8 @@
 
         Mouse {
             bindings = <
-&trans  &none  &none  &none   &none   &none   &none    &kp F23  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
-&none   &none  &none  &none   &none   &none   &none    &kp F24  &mkp LCLK     &mkp MCLK     &mkp RCLK     &none         &none         &none
+&trans  &none  &none  &none   &none   &none   &kp F23  &kp F23  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans
+&none   &none  &none  &none   &none   &none   &kp F24  &kp F24  &mkp LCLK     &mkp MCLK     &mkp RCLK     &none         &none         &none
 &none   &none  &none  &none   &none   &none                     &none         &none         &none         &none         &none         &none
 &none   &none  &none  &trans  &trans  &trans  &trans   &trans   &trans        &trans        &trans        &none         &none         &none
             >;
@@ -123,10 +123,10 @@
 
         System {
             bindings = <
-&trans  &none  &none  &none   &none   &none   &ht_boot_reset 0 0  &none    &none      &none      &none      &none  &none  &none
-&none   &none  &none  &none   &none   &none   &none               &none    &none      &none      &none      &none  &none  &none
-&none   &none  &none  &none   &none   &none                                &none      &none      &none      &none  &none  &none
-&none   &none  &none  &trans  &trans  &trans  &trans              &trans   &trans     &trans     &trans     &none  &none  &none
+&trans  &none  &none  &none   &none   &none   &ht_boot_reset 0 0  &none   &none   &none   &none   &none  &none  &none
+&none   &none  &none  &none   &none   &none   &none               &none   &none   &none   &none   &none  &none  &none
+&none   &none  &none  &none   &none   &none                               &none   &none   &none   &none  &none  &none
+&none   &none  &none  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &none  &none  &none
             >;
         };
     };
