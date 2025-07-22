@@ -16,6 +16,6 @@ RUN west init -l config && \
   west update && \
   west zephyr-export
 
-RUN pip3 install --break-system-packages -r zmk/zephyr/scripts/requirements.txt
+# RUN pip3 install --break-system-packages -r zmk/zephyr/scripts/requirements.txt
 
 WORKDIR /workspace/config
