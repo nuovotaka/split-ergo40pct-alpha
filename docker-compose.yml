@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  zmk-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: zmk-build-env
+    container_name: zmk-build
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace/config
+    tty: true
