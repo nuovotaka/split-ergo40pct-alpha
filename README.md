@@ -1,4 +1,4 @@
-# split-ergo40pct-beta
+# split-ergo40pct-alpha
 
 A 54-key split ergonomic keyboard with integrated trackball, powered by ZMK firmware.
 
