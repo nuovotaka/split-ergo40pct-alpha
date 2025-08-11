@@ -157,6 +157,8 @@
     };
 };
 
+// pointer acceleration
+
 &pointer_accel {
     status = "okay";
     compatible = "zmk,input-processor-acceleration";
