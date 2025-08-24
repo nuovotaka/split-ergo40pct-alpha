@@ -50,14 +50,7 @@
         compatible = "zmk,input-listener";
         status = "okay";
         device = <&trackball>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
-    };
-
-    trackpad_listener: trackpad_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&trackpad>;
-        input-processors = <&pointer_accel>;
+        input-processors = <&pointer_accel>, <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT)>;
     };
 
 };
@@ -118,43 +111,6 @@
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
-};
-
-// Track pad i2c settings
-
-&pinctrl {
-    i2c0_default: i2c0_default {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 12)>,
-                    <NRF_PSEL(TWIM_SCL, 1, 9)>;
-            bias-pull-up;
-        };
-    };
-
-    i2c0_sleep: i2c0_sleep {
-        group1 {
-            psels = <NRF_PSEL(TWIM_SDA, 0, 12)>,
-                    <NRF_PSEL(TWIM_SCL, 1, 9)>;
-            bias-pull-up;
-            low-power-enable;
-        };
-    };
-};
-&i2c0 {
-    status = "disabled";
-    compatible = "nordic,nrf-twim";
-    pinctrl-0 = <&i2c0_default>;
-    pinctrl-1 = <&i2c0_sleep>;
-    pinctrl-names = "default", "sleep";
-    clock-frequency = <I2C_BITRATE_FAST>;
-    zephyr,concat-buf-size = <32>;
-
-    trackpad: trackpad@56 {
-        status = "disabled";
-        compatible = "azoteq,iqs7211e";
-        reg = <0x56>;
-        irq-gpios = <&gpio0 13 GPIO_PULL_UP>;
-    };
 };
 
 // pointer acceleration

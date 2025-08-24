@@ -15,8 +15,5 @@ manifest:
     - name: zmk-driver-paw3222-alpha
       remote: nuovotaka
       revision: main
-    - name: zmk-driver-iqs7211e-tp
-      remote: nuovotaka
-      revision: main
   self:
     path: config
