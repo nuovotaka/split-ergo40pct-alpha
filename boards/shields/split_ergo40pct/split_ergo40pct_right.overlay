@@ -105,7 +105,7 @@
         snipe-layers = <5>;
         scroll-layers = <6>;
         scroll-horizontal-layers = <7>;
-        scroll-snipe-layers = <8>
+        scroll-snipe-layers = <8>;
         scroll-horizontal-snipe-layers = <9>;
     };
 };
