@@ -95,18 +95,17 @@ This firmware uses the following ZMK modules:
 
 ### Default Layers
 
-| Layer | Name           | Description                          |
-| ----- | -------------- | ------------------------------------ |
-| 0     | Base           | QWERTY layout with modifiers         |
-| 1     | Numbers        | Number row and navigation            |
-| 2     | Function       | F-keys and system controls           |
-| 3     | Bluetooth      | BT pairing and numpad                |
-| 4     | Mouse          | Mouse buttons and trackball controls |
-| 5     | Snipe          | Precision pointing mode              |
-| 6     | Scroll         | Scroll wheel emulation               |
-| 7     | Scroll_h       | Horizontal scroll mode               |
-| 8     | Scroll_snipe   | Precision scroll mode                |
-| 9     | Scroll_snipe_h | Precision horizontal scroll          |
+| Layer | Name                | Description                            |
+| ----- | ------------------- | -------------------------------------- |
+| 0     | Base                | QWERTY layout with modifiers           |
+| 1     | Numbers             | Number row and navigation              |
+| 2     | Function, Bluetooth | F-keys and BT pairing                  |
+| 3     | Mouse               | Mouse buttons, numpad, system controls |
+| 4     | Snipe               | Precision pointing mode                |
+| 5     | Scroll              | Scroll wheel emulation                 |
+| 6     | Scroll_h            | Horizontal scroll mode                 |
+| 7     | Scroll_snipe        | Precision scroll mode                  |
+| 8     | Scroll_snipe_h      | Precision horizontal scroll            |
 
 ### Trackball Features
 
@@ -119,14 +118,14 @@ This firmware uses the following ZMK modules:
 
 #### Layer Activation
 
-- **Snipe layers**: 5, 8, 9
-- **Scroll layers**: 6, 7, 8, 9
-- **Horizontal scroll**: 7, 9
+- **Snipe layers**: 4, 7, 8
+- **Scroll layers**: 5, 6, 7, 8
+- **Horizontal scroll**: 6, 8
 
 #### Combos
 
-- `Scroll`: Keys 50+44 → Activate scroll mode (layer 6)
-- `Scroll_snip`: Keys 50+46 → Activate precision scroll (layer 8)
+- `Scroll`: Keys 50+44 → Activate scroll mode (layer 5)
+- `Scroll_snip`: Keys 50+46 → Activate precision scroll (layer 7)
 
 ### Customization
 
